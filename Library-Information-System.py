@@ -7,8 +7,8 @@ def fun(e):
     root=Tk()
     con=sqlite3.Connection("projecttttttt")
     cur=con.cursor()
-    cur.execute("create table if not exists student(roll_no number primary key,name varchar(20),department varchar(6),gender number,dob varchar(10),degree varchar(10))")
     cur.execute("create table if not exists members(roll_no number primary key,member_type number,foreign key(roll_no) references student)")
+    cur.execute("create table if not exists student(roll_no number primary key,name varchar(20),department varchar(6),gender number,dob varchar(10),degree varchar(10))")
     cur.execute("create table if not exists quota(member_type number primary key,max_books number,max_duration number)")
     cur.execute("create table if not exists book_issue(roll_no number,isbn_no number,accession_no number,doi varchar(10),foreign key(isbn_no) references book,foreign key(roll_no) references student)")# date of issue should be sysdate
     cur.execute("create table if not exists book(isbn_no number primary key,title varchar(15),author varchar(10),publisher varchar(10),year number)")
@@ -20,9 +20,9 @@ def fun(e):
     root.title("Home")
     def student():
         root=Toplevel()
-        root.geometry("600x450")
+        root.geometry("800x950")
         root.title("Student Page")
-        Label(root,text="Students Profile",font="Algerian 30 bold",bg="blue",fg="red").place(x=90,y=10)
+        Label(root,text="check Students Profile",font="Algerian 30 bold",bg="blue",fg="red").place(x=90,y=10)
         Label(root,text=' Roll No ',font='Algerian',fg='red').place(x=90,y=70)
         roll=Entry(root)
         roll.place(x=350,y=80)

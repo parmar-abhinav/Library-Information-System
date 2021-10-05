@@ -40,6 +40,7 @@ def fun(e):
         dob=Entry(root)
         dob.place(x=350,y=260)
         Label(root,text='Degree',font='Algerian',fg='red',width=10,height=2).place(x=70,y=290)
+        Label(root,text='Degree',font='Algerian',fg='red',width=10,height=2).place(x=70,y=290)
         degree=Entry(root)
         degree.place(x=350,y=305)
         Label(root,text='Member Type',font='Algerian',fg='red',width=10,height=2).place(x=90,y=320)

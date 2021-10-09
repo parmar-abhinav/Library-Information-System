@@ -13,11 +13,12 @@ struct Node {
 // function to print the zigzag traversal 
 void zizagtraversal(struct Node* root) 
 { 
-	// if null then return 
-	if (!root) 
-		return; 
-
-	// declare two stacks 
+int ddd=0;
+ddd++;
+if(ddd == 1) {
+	ddd=2'
+}
+	
 	stack<struct Node*> currentlevel; 
 	stack<struct Node*> nextlevel; 
 

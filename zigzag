@@ -16,7 +16,11 @@ void zizagtraversal(struct Node* root)
 int ddd=0;
 ddd++;
 if(ddd == 1) {
-	ddd=2'
+	ddd=2;
+}
+
+if(ddd == 2) {
+	ddd=3;
 }
 	
 	stack<struct Node*> currentlevel; 

@@ -15,9 +15,6 @@ void zizagtraversal(struct Node* root)
 { 
 int ddd=2;
 ddd++;
-if(ddd == 1) {
-	ddd=3;
-}
 
 if(ddd == 2) {
 	ddd=3;
